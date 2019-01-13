@@ -36,6 +36,8 @@
     position: relative;
     cursor: pointer;
     border-radius: 10px;
+
+    text-decoration: none;
     -webkit-transition: 0.3s ease-in-out,
     -webkit-transform 0.3s ease-in-out;
     -moz-transition:  0.3s ease-in-out,
@@ -92,6 +94,8 @@
     position: absolute;
     width: inherit;
     height: inherit;
+
+    text-decoration: none;
 }
 
 .item-info h3 {
@@ -111,4 +115,20 @@
     margin: 0 30px;
     font-size: 14px;
     line-height: 2;
+}
+
+.item-tz {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: auto 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.item-tz-info {
+    background-color: Green; /* Green / Orange / Red */
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 5px;
 }

@@ -23,26 +23,76 @@ $conn = new mysqli($servername, $username, $password);
     <body>
         <div class="item-main-container">
             <ul class="item-list">
-                <li>
-                    <div class="item img-1">
-                        <a href="#">
-                            <div class="item-info">
-                                <h3>Segelfliegen</h3>
-                                <p>Kinder können hier mit Segelflugzeugen fliegen</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
+
+
                 <li>
                     <div class="item img-2">
                         <a href="#">
                             <div class="item-info">
-                                <h3>Kochen mit Jochen</h3>
-                                <p>Kinder kochen bei dieser Aktivität mit Jochen dem Chefkoch</p>
+                                <h3>Blindtext mit Gefühl</h3>
+                                <p> Test Text Test Text Test Text Text Text Text Text Text Text Text Text</p>
+                            </div>
+                        </a>
+                        <div class="item-tz">
+                            <h4 class="item-tz-info">[0/20]</h4>
+                        </div>
+                    </div>
+                </li>
+
+
+
+                <?php
+
+                /**
+                $sql = "SELECT * FROM `kfp`.`offerlist`";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+
+                    $row = $result->fetch_assoc();
+                    echo "<li>";
+                        echo "<div class='item img-2'>";
+                            echo "<a href='#'>";
+                                echo "<div class='item-info'>";
+                                    echo "<h3>";
+                                        echo $row['Name'];
+                                    echo "</h3>";
+                                    echo "<p>";
+                                        echo $row['Kurzbeschreibung'];
+                                    echo "</p>";
+                                    echo "<div class='item-tz'>";
+                                        echo "<h4 class='item-tz-info'>";
+                                            echo "[" . "var1" . "/" . $row['TeilnehmerAnzahl'] . "]";
+                                        echo "</h4>";
+                                    echo "</div>";
+                                echo "</div>";
+                            echo "</a>";
+                        echo "</div>";
+                    echo "</li>";
+                } else {
+                    echo "0 Results";
+                }
+                */
+                ?>
+
+
+
+                <!--
+
+                Vorlage
+
+                <li>
+                    <div class="item img-2">
+                        <a href="#">
+                            <div class="item-info">
+                                <h3>Name</h3>
+                                <p>Kurzbeschreibung</p>
                             </div>
                         </a>
                     </div>
                 </li>
+
+                -->
             </ul>
         </div>
     </body>

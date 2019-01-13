@@ -89,7 +89,7 @@ $conn = new mysqli($servername, $username, $password);
                 <a>Erzuegt zufällig generierte Identitäten und fügt diese in Datenbank ein.</a>
                 <br><br>
                 <form method="post" action="./data/function/generator.php">
-                    <input type="number" name="actiontimes" placeholder="Anzahl" min="0" max="100"><br>
+                    <input type="number" name="actiontimes" placeholder="Anzahl" min="0"><br>
                     <input type="submit" value="Generieren">
                 </form>
                 <br>
